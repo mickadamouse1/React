@@ -1,0 +1,17 @@
+    header {
+        background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+        color: #fff;
+        padding: .5rem;
+        font-size: 1.25rem;
+        border-top-right-radius: 2.5rem;
+        border-top-left-radius: 2.5rem;
+        text-align: center;
+        border-bottom: 2px solid crimson;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    }
+
+    .link {
+        padding: 0 .5rem;
+        color: white;       
+        font-weight: 500;
+    }

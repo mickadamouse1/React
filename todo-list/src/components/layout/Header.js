@@ -1,21 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import '../styling/header.css'; // Styling
 
 function Header() {
+
     return (
-        <header style={headerStyle}>
+        <header className="header">
             <h1>TodoList</h1>
+            <Link to="/" className="link">Home</Link> 
+            <Link to="/about" className="link">About</Link> 
         </header>
     )
-}
-
-const headerStyle = {
-    backgroundImage: 'linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)',
-    color: '#fff',
-    padding: '.5rem',
-    fontSize: '1.25rem',
-    borderTopRightRadius: '2.5rem',
-    borderTopLeftRadius: '2.5rem',
-    textAlign: 'center'
 }
 
 export default Header;

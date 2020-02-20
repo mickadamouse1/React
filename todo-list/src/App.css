@@ -19,30 +19,11 @@ li {
 }
 
 .App {
-  max-width: 50%;
-  min-width: 30rem;
+  width: 30rem;
   margin: 2rem auto;
   border: .2rem solid;
   border-radius: 2.65rem;
-  box-shadow: 0 6px 10px rgba(0,0,0,.5)
-}
-
-.todoItem:nth-last-child(1) {
-  border-bottom-left-radius: 2.5rem;
-  border-bottom-right-radius: 2.5rem;
-  padding: 1rem 1rem 1.5rem 1rem !important;
-}
-
-.btn {
-  display: inline-block;
-  border: none;
-  background: crimson;
-  color: white;
-  padding: .7rem 2rem;
-  cursor: pointer;
-  font-size: 1.25rem;
-}
-
-.btn:hover {
-  background: #f2204a;
+  box-shadow: 0 6px 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: .75rem;
+  border-bottom-right-radius: .75rem;
 }

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
+import About from './components/pages/About';
 import Todos from './components/Todos';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './App.css';
 
@@ -9,21 +11,6 @@ class App extends Component {
 
   state = {
     todos: [
-      {
-        id: 1,
-        title: 'Take out the trash',
-        completed: false
-      },
-      {
-        id: 2,
-        title: 'Dinner with the bois',
-        completed: false
-      },
-      {
-        id: 3,
-        title: 'Walk the dog',
-        completed: false
-      }
     ]
   }
 
@@ -37,22 +24,48 @@ class App extends Component {
     });
   }
 
-  // Deletes a Todo Item
+  // Delete Todo Item
   delTodo = (id) => {
     this.setState({
       todos: this.state.todos.filter(todo => todo.id !== id)
     });
   }
 
+  // Add Todo Item
+  addTodo = (title) => {
+    const newTodo = {
+      id: this.createID(),
+      title: title,
+      conpleted: false
+    }
+    this.setState({todos: [...this.state.todos, newTodo]});
+  }
+
+  // Create Unique ID
+  createID = () => {
+    const letters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    const letter1 = letters[Math.floor(Math.random() * letters.length)];
+    const letter2 = letters[Math.floor(Math.random() * letters.length)];
+    const num = Math.floor(Math.random() * 8999) + 1000;
+    return `${letter1}${letter2}${num}`;
+  }
+
   render() {
     return (
-      <div className="App">
+      <Router>
+        <div className="App">
         <div>
           <Header />
-          <AddTodo />
-          <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo}/>
+          <Route exact path="/" render={props => (
+            <React.Fragment>
+              <AddTodo addTodo={this.addTodo}/>
+              <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo}/>
+            </React.Fragment>
+          )}/>
+          <Route path="/about" component={About}/>
         </div>
       </div>
+      </Router>
     );
   }
   
