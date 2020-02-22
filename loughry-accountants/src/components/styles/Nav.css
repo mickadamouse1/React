@@ -1,32 +1,56 @@
-.navGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100% 100%;
+.nav {
+    background: #fff;
 }
 
 .navContact {
     display: flex;
     border-bottom: 2px solid #ffd166;
+    padding: 0 1rem;
 }
 
 .navContact p {
-    padding-right: 1rem;
+    padding-right: .5rem;
     font-weight: 300;
     color: grey;
+}
+
+.navContact p i {
+    padding-right: .5rem;
 }
 
 .navMain {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
+}
+
+.navMain h1 {
+    color: #333;
 }
 
 .navMain ul li {
-    display: inline;
-    padding-left: 1rem;
+    display: inline-flex;
+    padding-left: 2rem;
+    justify-content: center;
+    align-items: center;
+    opacity: .75;
+}
+
+.navMain ul li:hover {
+    opacity: 1;
 }
 
 .navMain ul li a {
     color: #333;
     font-size: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.navMain ul li i {
+    font-size: 1.3rem;
+    color: #333;
+    padding-right: .35rem;
 }
