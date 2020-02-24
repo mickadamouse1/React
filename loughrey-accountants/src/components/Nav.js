@@ -9,7 +9,7 @@ class Nav extends Component {
                 <div className="container">
                     <div className="navContact">
                         <p><i className="fas fa-envelope"></i>mjloughrey@accountant.com</p>
-                        <p>|</p>
+                        <p><span>|</span></p>
                         <p><i className="fas fa-phone"></i>0151 632 3298</p>
                     </div>
                     <div className="navMain">

@@ -12,10 +12,20 @@
     padding-right: .5rem;
     font-weight: 300;
     color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navContact p i {
     padding-right: .5rem;
+}
+
+.navContact p span {
+    position: absolute;
+    font-size: 1.1rem;
+    color: #8080804f;
+    top: 1rem;
 }
 
 .navMain {
