@@ -1,0 +1,19 @@
+.sectionIntroduction {
+    margin: 5rem 0;
+    color: #333;
+}
+
+.introductionIntro {
+    text-align: center;
+    width: 52%;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+
+.introductionIntro h1 {
+    font-size: 2.5rem;
+}
+
+.introductionIntro p {
+    color: #333333c2;
+}

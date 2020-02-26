@@ -1,12 +1,16 @@
+.sectionServices {
+    margin: 5rem 0;
+}
+
 .servicesIntro {
     text-align: center;
-    padding: 2rem 0;
+    margin-bottom: 4rem;
     color: #333;
 }
 
 .servicesIntro h1 {
     font-size: 2.5rem;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .servicesIntro p {
@@ -17,7 +21,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 70rem;
 }
 
 .service {
