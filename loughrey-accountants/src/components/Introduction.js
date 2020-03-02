@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import svgLeft from './images/svg/introLeft.svg';
+import svgRight from './images/svg/introRight.svg';
 import './styles/Introduction.css';
 
 class Introduction extends Component {
@@ -6,6 +8,8 @@ class Introduction extends Component {
         return (
             <section className="sectionIntroduction">
                 <div className="container">
+                    <img className="svgLeft" src={svgLeft} alt=""/>
+                    <img className="svgRight" src={svgRight} alt=""/>
                     <div className="introductionIntro">
                         <h1>Why Choose Us?</h1>
                         <p><strong>Loughrey & Co accountants are based in Hoylake, Wirral and have provided tax and accountancy services to businesses for over 30 years.</strong></p>

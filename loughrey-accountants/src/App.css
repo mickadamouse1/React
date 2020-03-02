@@ -10,9 +10,14 @@ body {
     padding: 0;
     margin: 0;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    color: #333;
 }
 
 .container {
     max-width: 73.1rem;
     margin: 0 auto;
+}
+
+.header {
+    font-size: 2.5rem;
 }

@@ -1,6 +1,9 @@
 .sectionIntroduction {
-    margin: 5rem 0;
+    padding: 3.5rem 0;
     color: #333;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    position: relative;
 }
 
 .introductionIntro {
@@ -8,6 +11,7 @@
     width: 52%;
     margin: 0 auto;
     line-height: 2rem;
+    position: relative;
 }
 
 .introductionIntro h1 {
@@ -16,4 +20,22 @@
 
 .introductionIntro p {
     color: #333333c2;
+}
+
+/* SVGs */
+
+.sectionIntroduction img {
+    position: absolute;
+    opacity: .75;
+    width: 23rem;
+}
+
+.svgLeft {
+    top: 15rem;
+    left: 3rem;
+}
+
+.svgRight {
+    top: 7rem;
+    right: 3rem;
 }
