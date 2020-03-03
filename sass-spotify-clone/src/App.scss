@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, helvetica;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: .01rem;
+}
+
+html {
+    scrollbar-color: hsla(0,0%,100%,.3) transparent;
+}
+
+body {
+    background: #121212;
+}
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}

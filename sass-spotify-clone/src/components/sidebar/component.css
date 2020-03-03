@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif, helvetica;
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: .01rem;
+}
+
+html {
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+body {
+  background: #121212;
+}
+
+.section {
+  background: #040404;
+  width: 14rem;
+  color: #b3b3b3;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0 2rem 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section h1 i {
+  font-size: 2.5rem;
+  padding-right: .25rem;
+}
+
+.section .nav {
+  width: 90%;
+}
+
+.section .nav li {
+  height: 2.5rem;
+  border-radius: .35rem;
+  padding: 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: .95rem;
+}
+
+.section .nav li i {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+
+.section .nav .home {
+  background: #333;
+  color: #fff;
+}
+
+.section h3 {
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: start;
+  width: 70%;
+  margin: 1.75rem 0 .5rem;
+}
+
+.section .playlistNav {
+  width: 70%;
+}
+
+.section .playlistNav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .85rem;
+  font-weight: 700;
+  margin: .65rem 0;
+}
+
+.section .playlistNav li i {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section .playlistNav li .plus {
+  background: #9a9a9a;
+  color: #000;
+}
+
+.section .playlistNav li .liked {
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+  color: #fff;
+}
+
+.section hr {
+  width: 75%;
+  border: 1px solid #333;
+  margin: .2rem 0 1rem .6rem;
+}
+
+.section .playlist {
+  width: 70%;
+  overflow-y: auto;
+  scroll-behavior: contain;
+  height: 15rem;
+}
+
+.section .playlist li {
+  height: 2rem;
+  cursor: pointer;
+}
+
+.section .playlist li:hover {
+  color: #fff;
+}
+/*# sourceMappingURL=component.css.map */
