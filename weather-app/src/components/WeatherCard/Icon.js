@@ -2,12 +2,24 @@ import React from 'react';
 
 const Icon = (props) => {
 
-    const icon = {
+    const iconStyle = {
         fontSize: '2.5rem'
     }
 
+    let icon;
+    switch (props.condition) {
+        case "Clear":
+            icon = 'fas fa-sun';
+            break;
+        case "Clouds":
+            icon = 'fas fa-cloud';
+            break;
+        default:
+            break;
+    }
     return (
-        <i className="fas fa-cloud" style={icon}></i> 
+        
+        <i className={icon} style={iconStyle}></i> 
     );
 }
 
